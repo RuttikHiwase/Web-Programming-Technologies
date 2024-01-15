@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope And Contional</title>
+</head>
+<body>
+    <div>
+        <u>
+            <li>Item-1</li>
+            <li>Item-2</li>
+            <li>Item-3</li>
+            <li>Item-4</li>
+            <li>Item-5</li>
+            <li>Item-6</li>
+            <li>Item-7</li>
+        </u>
+    </div>
+    
+    <script>
+     var string1="This is a string";
+     var string1 ="This is a string";
+     console.log(string1);
+     //------------------------
+   // Let vs Var
+
+     let a="u";
+     {
+        let a="u6";
+        console.log(a)
+     }
+     console.log(a)
+
+     //--------------------------
+//const keyword
+     const b="This cannot be changged";
+     console.log(b)
+   // b="I want to changed it but it cannot be Changed";
+    console.log(b)
+
+//--------------------------------------------
+
+let age=18;
+if(age<28){
+    console.log("you can drink water");
+}
+else{
+    console.log("you cannot drink water");
+}
+
+//-------------------------------------------
+
+const cups=45;
+
+
+
+    </script>
+</body>
+</html>
