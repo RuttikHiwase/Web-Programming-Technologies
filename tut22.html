@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psedo Selectors And More Styling</title>
+    <style>
+        .container{
+            border: 3px solid rgb(3, 3, 27);
+            background-color: aqua;
+            padding: 34px;
+            
+            margin: 34px auto;
+            /* margin auto = means y-axis equal space from both the sides i.e left and right */
+            /* margin = first for x-axis means Space from top to keep. for eg-margin : 40px; so 40px space remain between top and block */
+            /* margin = second for y-axis means space from left to keep .for eg- margin :40px;so 40px remain from left side and block*/
+
+            width: 700px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        a:hover{
+            color: red;
+            background-color:blueviolet ;
+        }
+        /* a:visited---this property will change the decoration after it visited one time to link */
+        /* a:active--this property will change the decoration after cursor move to button at active space it will hover */
+        .btn{
+            background-color: azure;
+            padding: 6px;
+            border: none;
+            cursor: pointer;
+            font-size: 13px;
+            font-style: oblique;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="cont1">
+        <h3>This is my Heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos iusto maiores in eum. Sint officiis aperiam dignissimos voluptate delectus deleniti natus quasi minima vitae ducimus blanditiis cumque perspiciatis ipsum nihil, rem itaque. Esse nihil officiis veniam, ex aperiam dolor iure?</p>
+        <a href="" class="btn">Read More</a>
+        <button class="btn">Click Here</button>
+    </div>
+    
+</body>
+</html>

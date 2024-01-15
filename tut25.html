@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Property in CSS</title>
+    <style>
+         /* CSS Position: static (default), relative, absolute, fixed, sticky */
+     .box{
+        display: inline-block;/* this property is used to set boxes in row inline */
+        border: 2px solid purple;
+        width: 150px;
+        height: 150px;
+        margin: 2px;
+     }
+     .container{
+        border: 2px solid black;
+        background-color: aquamarine;
+        height: 5000px;
+     }
+     #box3{
+         /* relative: Positions the element relative to its normal positon and will leave a gap at its normal position*/
+        /* position: relative; */
+        /* left: 50px; */
+        /* top: 100px; */
+        /* ------------------------------------------------------------------- */
+        /* absolute: Positions the element relative to the positon of its first parent*/
+        /* parent means container class is parent here. */
+        /* position: absolute;
+        left: 50px;
+        top: 100px; */
+        /* ------------------------------------------------------------------ */
+         /* fixed: Positions the element relative to the browser window; */
+         /* It Keeps the position fixed at same position, even if page is scroll .it will became constant at one place */
+           /* position: fixed; */
+           /* right: 9px;     */
+           /* it will leave 9px space from right side */
+           /* bottom: 5px; */
+           /* it will leave 5px space from bottom */
+        /* ----------------------------------------------------------------- */
+         /* sticky: Positions the element relative to the users scroll position */
+         /* it stick the box at the top of page,after scroll down also remain constant*/
+        position: sticky;
+        top: 15px;
+     }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="box" id="box1">1</div>
+    <div class="box" id="box2">2</div>
+    <div class="box" id="box3">Chat with us</div>
+    <div class="box" id="box4">4</div></div>
+</body>
+</html>
+<!-- Tutorial 26 is GYM Website. Visit Gym Web Project folder in Web-Devlopment folder -->
+<!-- "D:\HARRY WEBDEVELOPMENT PLAYLIST\Harry-WebDev\Gym Web Project" -->
+<!-- This is Project Path -->

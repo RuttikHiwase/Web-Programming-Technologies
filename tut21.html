@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Aligments</title>
+</head>
+<style>
+    *{
+box-sizing: border-box;
+    }
+    body{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .container{
+        background-color: rgb(187, 155, 159);
+        width: 900px;
+        border: 5px solid rgb(34, 8, 34);
+        margin: 33px auto;
+        /* margin : 33px for x-axis i.e horzontal and auto is for y-axis */
+
+    }
+    .item{
+        border: 5px solid grey;
+        margin: 40px 3px;
+        padding: 15px 3px;
+        background-color: rgb(142, 138, 146);
+
+    }
+    #fruits{
+        /* float is used to fix the fruits block at right corner */
+        float: right;
+        width: 48%;
+        /* widht is given to blocks to adjust spacing .row is of 100% so fit in one row two blocks will be 48% and 48%  and 2% for spacing .*/
+    }
+    #computers{
+        /* float is used  to fix the computers in left corner */
+         float: left;
+        width: 48%;
+
+    }
+    #stationary{
+         /* float: left; */
+        width: 100%;
+        clear: both;
+/* clear: left; */
+/* clear: right; */
+  /* ***CLEAR-BOTH PROPERTY  NOT ALLOW OTHER BOXES TO OVERLAP THE BOX WHICH CONSIST CLEAR PROPERTY*/
+  /* CLEAR-RIGTH PROPERTY NOT ALLOW ANY BOX TO OVERLAP IT BY RIGTH SIDE  */
+  /* CLEAR-LEFT PROPERTY NOT ALLOW ANY BOX TO OVERLAP IT BY LEFT SIDE */
+
+    }
+    p,h3{
+        /* This Property Align the text rigth,left,center */
+        /* text-align: right; */
+        text-align: left;
+        /* text-align: center; */
+    }
+    h1{
+        /* This Margin  and Width Property used to set heading in center*/
+        margin:  auto;
+        width:455px ;
+    }
+</style>
+<body>
+    <h2>Alignment in CSS</h2>
+    <div class="container">
+        <!-- ----------------------------------------------------- -->
+        <h1>Welcome To My Online Store </h1>
+        <div class="item" id="fruits">
+            <h3>Fruits</h3>
+            <p id="fruitspara" class="para">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste rerum assumenda veritatis omnis aliquam? Sit suscipit mollitia sed consequatur vitae. Eum, iusto. Harum pariatur illum facilis ratione cum, consequuntur Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, voluptate deleniti ullam modi eligendi provident rem at magnam. Inventore minus quaerat iure neque quae mollitia cupiditate dolor debitis! Libero, tempora?
+            </p>
+            </div>
+            <!----------------------------------------------------  -->
+
+            <div class="item" id="computers">
+                <h3>Computers</h3>
+                <p id="computerpara" class="para">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste rerum assumenda veritatis omnis aliquam? Sit suscipit mollitia sed consequatur vitae. Eum, iusto. Harum pariatur illum facilis ratione cum, consequuntur rerum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, dolorum saepe? Et vitae deleniti dolores sed eum, facere error! Odio suscipit laborum magnam doloremque maxime, praesentium dolore dolores cumque optio?
+                </p>
+            </div>
+            <!-- --------------------------------------------------- -->
+            <div class="item" id="stationary">
+                <h3>Stationay</h3>
+                <p id="stationarypara" class="para">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste rerum assumenda veritatis omnis aliquam? Sit suscipit mollitia sed consequatur vitae. Eum, iusto. Harum pariatur illum facilis ratione cum, consequuntur rerum.
+                </p>
+            </div>
+            <!-- ------------------------------------------------------------- -->
+    </div>
+    
+    
+</body>
+</html>

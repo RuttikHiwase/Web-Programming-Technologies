@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar  in CSS</title>
+    <style>
+        .navbar{
+            background-color: rgb(87, 40, 126);
+            margin:5px ;
+            border-radius: 5px;
+        }
+        .navbar li{
+            list-style: none;
+            /* It will remove the bullets of list */
+            float: left;
+            /* It will keep all elements in left side */
+            margin: 21px 28px;
+        }
+        .navbar ul{
+            overflow: auto;
+            /* It will not overlap elements and make visible bg-color */
+        }
+        .navbar li a{
+            padding: 3px 3px;
+            text-decoration: none;
+            color: aliceblue;
+            
+        }
+        .search{
+            float: right;
+            color: white;
+            padding: 18px 100px ;
+        }
+        .navbar input{
+            border: 2px solid rgb(20, 13, 13);
+            border-radius: 3px;
+            padding: 2px 17px;
+        }
+      .navbar li   a:hover{
+        color: rgb(12, 12, 12);
+
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+               <li><a href="#">Home</a></li>
+               <li><a href="#">About</a></li>
+               <li><a href="#">Services</a></li>
+               <li><a href="#">Contact Us</a></li>
+                <div class="search">
+                  <input type="text" name="Search" id="Search" placeholder="Search This Website">
+                </div>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
